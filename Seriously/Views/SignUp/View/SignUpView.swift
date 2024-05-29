@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SignUpView: View {
+    @ObservedObject var viewModel = SignUpViewModel()
     var body: some View {
         AppBackground() {
             VStack {
@@ -19,5 +20,5 @@ struct SignUpView: View {
 }
 
 #Preview {
-    SignUpView()
+    SignUpView(viewModel: SignUpViewModel())
 }
