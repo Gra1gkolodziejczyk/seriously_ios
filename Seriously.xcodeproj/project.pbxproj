@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		400D60C52BAF1A0A0015872C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400D60C42BAF1A0A0015872C /* HomeView.swift */; };
-		400D60C72BAF2C3C0015872C /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400D60C62BAF2C3C0015872C /* RegisterViewModel.swift */; };
 		400D60CC2BAF3E970015872C /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400D60CB2BAF3E970015872C /* SignInViewModel.swift */; };
 		400D60D02BAF47FB0015872C /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400D60CF2BAF47FB0015872C /* UserRepository.swift */; };
 		407B04C02B964D50005B68B8 /* SeriouslyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407B04BF2B964D50005B68B8 /* SeriouslyApp.swift */; };
@@ -20,14 +19,16 @@
 		407B04DC2B964EDC005B68B8 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407B04DB2B964EDC005B68B8 /* StartView.swift */; };
 		407B04DE2B964EE7005B68B8 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407B04DD2B964EE7005B68B8 /* SignUpView.swift */; };
 		407B04E02B964EEF005B68B8 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407B04DF2B964EEF005B68B8 /* SignInView.swift */; };
-		407B04E32B964F2F005B68B8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407B04E22B964F2F005B68B8 /* UserModel.swift */; };
-		407B04E62B964F4A005B68B8 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407B04E52B964F4A005B68B8 /* UserViewModel.swift */; };
 		407B04E82B965059005B68B8 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407B04E72B965059005B68B8 /* AppButton.swift */; };
+		40E2CD492BEE563100C06FA0 /* ResetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2CD482BEE563100C06FA0 /* ResetPasswordViewModel.swift */; };
+		40E2CD4C2BEE5AE000C06FA0 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2CD4B2BEE5AE000C06FA0 /* SignInModel.swift */; };
+		40E2CD4F2BEE5C0C00C06FA0 /* ResetPasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2CD4E2BEE5C0C00C06FA0 /* ResetPasswordModel.swift */; };
+		40E2CD562BEE653B00C06FA0 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2CD552BEE653B00C06FA0 /* SignUpViewModel.swift */; };
+		40E2CD592BEE68D700C06FA0 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2CD582BEE68D700C06FA0 /* SignUpModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		400D60C42BAF1A0A0015872C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		400D60C62BAF2C3C0015872C /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		400D60CB2BAF3E970015872C /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		400D60CF2BAF47FB0015872C /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		407B04BC2B964D50005B68B8 /* Seriously.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seriously.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,9 +41,12 @@
 		407B04DB2B964EDC005B68B8 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		407B04DD2B964EE7005B68B8 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		407B04DF2B964EEF005B68B8 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
-		407B04E22B964F2F005B68B8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		407B04E52B964F4A005B68B8 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		407B04E72B965059005B68B8 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		40E2CD482BEE563100C06FA0 /* ResetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewModel.swift; sourceTree = "<group>"; };
+		40E2CD4B2BEE5AE000C06FA0 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
+		40E2CD4E2BEE5C0C00C06FA0 /* ResetPasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordModel.swift; sourceTree = "<group>"; };
+		40E2CD552BEE653B00C06FA0 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		40E2CD582BEE68D700C06FA0 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,10 @@
 		400D60C32BAF19FC0015872C /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				400D60C42BAF1A0A0015872C /* HomeView.swift */,
+				40E2CD532BEE636E00C06FA0 /* View */,
+				40E2CD522BEE636700C06FA0 /* Widgets */,
+				40E2CD512BEE636100C06FA0 /* ViewModel */,
+				40E2CD502BEE635700C06FA0 /* Model */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -125,8 +132,6 @@
 				400D60CD2BAF47E10015872C /* Repository */,
 				407B04D22B964E2B005B68B8 /* Widgets */,
 				407B04D12B964E1D005B68B8 /* Views */,
-				407B04D02B964E18005B68B8 /* ViewModels */,
-				407B04CF2B964E12005B68B8 /* Models */,
 				407B04BF2B964D50005B68B8 /* SeriouslyApp.swift */,
 				407B04C12B964D50005B68B8 /* ContentView.swift */,
 				407B04C52B964D50005B68B8 /* Assets.xcassets */,
@@ -141,22 +146,6 @@
 				407B04C82B964D50005B68B8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		407B04CF2B964E12005B68B8 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				407B04E12B964F1F005B68B8 /* User */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		407B04D02B964E18005B68B8 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				407B04E42B964F39005B68B8 /* User */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		407B04D12B964E1D005B68B8 /* Views */ = {
@@ -191,7 +180,10 @@
 		407B04D62B964EA8005B68B8 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				407B04DD2B964EE7005B68B8 /* SignUpView.swift */,
+				40E2CD5B2BEE68FF00C06FA0 /* Widgets */,
+				40E2CD5A2BEE68EE00C06FA0 /* View */,
+				40E2CD572BEE68C100C06FA0 /* Model */,
+				40E2CD542BEE652E00C06FA0 /* ViewModel */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -199,6 +191,7 @@
 		407B04D72B964EB0005B68B8 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
+				40E2CD4A2BEE5ACA00C06FA0 /* Model */,
 				400D60CA2BAF3E830015872C /* View */,
 				400D60C92BAF3E7B0015872C /* ViewModel */,
 				400D60C82BAF3E750015872C /* Widgets */,
@@ -209,26 +202,111 @@
 		407B04D82B964EB6005B68B8 /* ResetPassword */ = {
 			isa = PBXGroup;
 			children = (
-				407B04D92B964ECF005B68B8 /* ResetPasswordView.swift */,
+				40E2CD4D2BEE5BEB00C06FA0 /* Model */,
+				40E2CD472BEE561000C06FA0 /* Widgets */,
+				40E2CD462BEE560A00C06FA0 /* ViewModel */,
+				40E2CD452BEE560300C06FA0 /* View */,
 			);
 			path = ResetPassword;
 			sourceTree = "<group>";
 		};
-		407B04E12B964F1F005B68B8 /* User */ = {
+		40E2CD452BEE560300C06FA0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				407B04E22B964F2F005B68B8 /* UserModel.swift */,
+				407B04D92B964ECF005B68B8 /* ResetPasswordView.swift */,
 			);
-			path = User;
+			path = View;
 			sourceTree = "<group>";
 		};
-		407B04E42B964F39005B68B8 /* User */ = {
+		40E2CD462BEE560A00C06FA0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				407B04E52B964F4A005B68B8 /* UserViewModel.swift */,
-				400D60C62BAF2C3C0015872C /* RegisterViewModel.swift */,
+				40E2CD482BEE563100C06FA0 /* ResetPasswordViewModel.swift */,
 			);
-			path = User;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		40E2CD472BEE561000C06FA0 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		40E2CD4A2BEE5ACA00C06FA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40E2CD4B2BEE5AE000C06FA0 /* SignInModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		40E2CD4D2BEE5BEB00C06FA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40E2CD4E2BEE5C0C00C06FA0 /* ResetPasswordModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40E2CD502BEE635700C06FA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40E2CD512BEE636100C06FA0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		40E2CD522BEE636700C06FA0 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		40E2CD532BEE636E00C06FA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				400D60C42BAF1A0A0015872C /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		40E2CD542BEE652E00C06FA0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				40E2CD552BEE653B00C06FA0 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		40E2CD572BEE68C100C06FA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40E2CD582BEE68D700C06FA0 /* SignUpModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40E2CD5A2BEE68EE00C06FA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				407B04DD2B964EE7005B68B8 /* SignUpView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		40E2CD5B2BEE68FF00C06FA0 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Widgets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,15 +381,17 @@
 			files = (
 				407B04C22B964D50005B68B8 /* ContentView.swift in Sources */,
 				407B04E02B964EEF005B68B8 /* SignInView.swift in Sources */,
-				407B04E32B964F2F005B68B8 /* UserModel.swift in Sources */,
+				40E2CD4C2BEE5AE000C06FA0 /* SignInModel.swift in Sources */,
+				40E2CD592BEE68D700C06FA0 /* SignUpModel.swift in Sources */,
+				40E2CD4F2BEE5C0C00C06FA0 /* ResetPasswordModel.swift in Sources */,
 				407B04DC2B964EDC005B68B8 /* StartView.swift in Sources */,
 				407B04D42B964E3E005B68B8 /* AppBackground.swift in Sources */,
+				40E2CD492BEE563100C06FA0 /* ResetPasswordViewModel.swift in Sources */,
+				40E2CD562BEE653B00C06FA0 /* SignUpViewModel.swift in Sources */,
 				407B04C02B964D50005B68B8 /* SeriouslyApp.swift in Sources */,
 				407B04DE2B964EE7005B68B8 /* SignUpView.swift in Sources */,
 				400D60D02BAF47FB0015872C /* UserRepository.swift in Sources */,
 				400D60CC2BAF3E970015872C /* SignInViewModel.swift in Sources */,
-				400D60C72BAF2C3C0015872C /* RegisterViewModel.swift in Sources */,
-				407B04E62B964F4A005B68B8 /* UserViewModel.swift in Sources */,
 				400D60C52BAF1A0A0015872C /* HomeView.swift in Sources */,
 				407B04DA2B964ECF005B68B8 /* ResetPasswordView.swift in Sources */,
 				407B04E82B965059005B68B8 /* AppButton.swift in Sources */,
@@ -373,7 +453,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -430,7 +510,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

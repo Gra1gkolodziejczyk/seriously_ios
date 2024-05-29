@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ResetPasswordView: View {
+    @ObservedObject var viewModel = ResetPasswordViewModel()
+    
     var body: some View {
-        NavigationView {
             AppBackground() {
                 VStack {
                     Image("seriously")
@@ -20,14 +21,14 @@ struct ResetPasswordView: View {
                         .fontWeight(.bold)
                         .foregroundStyle(.white)
                     Spacer()
-                    TextField("Entrer votre email", text: <#Binding<String>#>)
+                    TextField("Entrer votre nouveau mot de passe", text: $viewModel.newPassword)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(8)
                         .padding(.horizontal)
                         .frame(height: 50)
                         .autocapitalization(.none)
-                    SecureField("Entrer votre mot de passe", text: <#Binding<String>#>)
+                    TextField("Confirmer votre nouveau mot de passe", text: $viewModel.confirmNewPassword)
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(8)
@@ -36,8 +37,10 @@ struct ResetPasswordView: View {
                         .autocapitalization(.none)
                     AppButton(
                         icon: .none,
-                        action: {},
-                        label: "Se connecter",
+                        action: {
+                            viewModel.resetPassword()
+                        },
+                        label: "Réinitialiser votre mot de passe",
                         iconPosition: .none,
                         backgroundColor: .purple,
                         isFullWidth: true,
@@ -45,12 +48,19 @@ struct ResetPasswordView: View {
                         imageSize: CGSize(width: 0, height: 0)
                     )
                     .padding()
+                    Spacer()
+                    if let errorMessage = viewModel.errorMessage {
+                        Text(errorMessage)
+                            .foregroundColor(.red)
+                            .padding()
+                    }
                 }
             }
         }
-    }
 }
 
-#Preview {
-    ResetPasswordView()
+struct ResetPasswordView_Previews: PreviewProvider {
+    static var previews: some View {
+        ResetPasswordView(viewModel: ResetPasswordViewModel())
+    }
 }

@@ -62,7 +62,7 @@ struct AppButton: View {
     VStack {
         AppButton(
             icon: .systemName("arrow.left"),
-            action: {}, 
+            action: {},
             label: "Icon a gauche",
             iconPosition: .left,
             backgroundColor: .blue,
@@ -89,7 +89,7 @@ struct AppButton: View {
             isFullWidth: true,
             textColor: .white,
             imageSize: CGSize(width: 0, height: 0)
-        )
+        );
     }
     .padding()
 }

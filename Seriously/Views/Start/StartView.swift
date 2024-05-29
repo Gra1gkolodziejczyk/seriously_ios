@@ -9,7 +9,6 @@ import SwiftUI
 
 struct StartView: View {
     var body: some View {
-        NavigationView {
             AppBackground() {
                 VStack {
                     Image("seriously")
@@ -19,25 +18,23 @@ struct StartView: View {
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundStyle(.white)
-                    Spacer()  
-                    NavigationLink {
-                        SignUpView()
-                    } label: {
+                    Spacer()
+                    NavigationLink(destination: SignUpView(viewModel: SignUpViewModel())) {
                         AppButton(
                             icon: .none,
-                            label: "Créer mon compte",
+                            action: {},
+                            label: "Créer un compte",
                             iconPosition: .none,
                             backgroundColor: .black,
                             isFullWidth: true,
                             textColor: .white,
                             imageSize: CGSize(width: 0, height: 0)
-                        )
-                        .padding(.horizontal)
+                        ).padding(.horizontal)
                     }
                     AppButton(
                         icon: .imageName("google"),
                         action: {},
-                        label: "S'inscrire avec google",
+                        label: "Se connecter avec Google",
                         iconPosition: IconPosition.left,
                         backgroundColor: .black,
                         isFullWidth: true,
@@ -47,7 +44,7 @@ struct StartView: View {
                     .padding(.horizontal)
                     AppButton(
                         icon: .systemName("apple.logo"),
-                        action: {}, label: "S'inscrire avec Apple",
+                        action: {}, label: "Se connecter avec Apple",
                         iconPosition: IconPosition.left,
                         backgroundColor: .black,
                         isFullWidth: true,
@@ -72,7 +69,6 @@ struct StartView: View {
             }
         }
     }
-}
 
 #Preview {
     StartView()

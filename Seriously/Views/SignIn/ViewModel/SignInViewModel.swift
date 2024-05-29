@@ -19,10 +19,14 @@ class SignInViewModel: ObservableObject {
     private let userRepository = UserRepository()
     
     func login() {
-        emailErrorMessage = !isValidEmail(email) ? "le format de l'email est invalide." : "";
-        passwordErrorMessage = !isValidPassword(password) ? "Le mot de passe doit contenir au moins 8 charactères." : "";
+        emailErrorMessage = !isValidEmail(email) ? "Le format de l'email est invalide." : ""
+        passwordErrorMessage = !isValidPassword(password) ? "Le mot de passe doit contenir au moins 8 caractères." : ""
         
-        userRepository.login(email: email, password: password) { [weak self] result in
+        guard isValidEmail(email), isValidPassword(password) else {
+            return
+        }
+        
+        userRepository.login(model: SignInModel(email: email, password: password)) { [weak self] result in
             switch result {
             case .success(let accessToken):
                 UserDefaults.standard.set(accessToken, forKey: "accessToken")
@@ -34,6 +38,7 @@ class SignInViewModel: ObservableObject {
             }
         }
     }
+    
     private func isValidEmail(_ email: String) -> Bool {
         let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
         let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
@@ -44,3 +49,4 @@ class SignInViewModel: ObservableObject {
         return password.count >= 8
     }
 }
+

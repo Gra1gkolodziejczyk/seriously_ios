@@ -69,7 +69,7 @@ struct SignInView: View {
                             .foregroundStyle(.white)
                         NavigationLink(
                             destination: {
-                                ResetPasswordView()
+                                ResetPasswordView(viewModel: ResetPasswordViewModel())
                             }, label: {
                                 Text("Reinitialise ton mot de passe")
                                     .foregroundStyle(.purple)
@@ -81,8 +81,6 @@ struct SignInView: View {
         }
     }
 }
-
-
 
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
